@@ -4,7 +4,7 @@ import './index.css'
 import Index from './portfolios/index.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+
    <Index/> 
-  </StrictMode>,
+ 
 )
