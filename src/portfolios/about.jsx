@@ -11,7 +11,7 @@ const about = () => {
   return (
     <>
     <div className="container-fluid  flex">
-      <div className="social_links fixed h-[100%] top-30  p-3 flex items-center"> 
+      <div className="social_links fixed h-[100%] top-100 hidden lg:block p-3 flex justify-between items-center"> 
         <ul>
         
           <li className='cursor-pointer my-5 md:text-[25px]'> <a href="https://github.com/mrabhishekmishra">
@@ -29,7 +29,12 @@ const about = () => {
         </ul>
       </div>
    <div className="container p-5 mt-[50px] m-auto block md:flex md:justify-between  text-[white] ">
-    <div className='w-[60%]  '>
+    <div className='w-[60%]  text-center m-auto '>
+    <div className="img w-[35%]  flex justify-center m-auto  block lg:hidden items-center \ ">
+      <div className="profile-img border border-[cyan] rounded-[50%] w-[500px] h-[500px] ">
+    <img src={Img} alt="" className=' mx-w-full h-[100%] rounded-[50%]'/>
+      </div>
+    </div>
     <p className='text-[cyan] text-[25px] font-bold font-serif'>
         Hi, I am
      </p>
@@ -47,7 +52,7 @@ const about = () => {
      </button>
 
     </div>
-    <div className="img w-[35%]  flex justify-center items-center ">
+    <div className="img w-[35%]  flex justify-center m-auto hidden lg:block items-center ">
       <div className="profile-img border border-[cyan] rounded-[50%] w-[400px] h-[400px] ">
     <img src={Img} alt="" className=' w-[100%] h-[100%] rounded-[50%]'/>
       </div>
