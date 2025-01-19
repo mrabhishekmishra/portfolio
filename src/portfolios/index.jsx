@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Header from "./header"
 import About from "./about"
 import Project from "./projects"
+import Skills from "./skills";
 const index = () => {
   return (
     <>
@@ -12,6 +13,8 @@ const index = () => {
         <About/>
         {/* Projects page */}
         <Project/>
+          {/* skills page */}
+          <Skills/>
     </div>
     </>
   )
