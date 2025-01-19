@@ -31,8 +31,8 @@ const about = () => {
    <div className="container p-5 mt-[50px] m-auto block md:flex md:justify-between   text-[white] ">
     <div className='w-[60%] text-center lg:text-start m-auto '>
     <div className="img w-[35%]  flex justify-center m-auto  block lg:hidden items-center  ">
-      <div className="profile-img border border-[cyan] rounded-[50%] w-[1000px] h-[100px] ">
-    <img src={Img} alt="" className=' w-[100%] h-[100%] rounded-[50%]'/>
+      <div className="profile-img border border-[cyan]  w-[600px] rounded-full overflow-hidden ">
+    <img src={Img} alt="" className=' w-[100%]'/>
       </div>
     </div>
     <p className='text-[cyan] text-[25px] font-bold font-serif'>
@@ -53,8 +53,8 @@ const about = () => {
 
     </div>
     <div className="img w-[35%]  flex justify-center m-auto hidden lg:block items-center ">
-      <div className="profile-img border border-[cyan] rounded-[50%] w-[400px] h-[400px] ">
-    <img src={Img} alt="" className=' w-[100%] h-[100%] rounded-[50%]'/>
+      <div className="profile-img border border-[cyan] rounded-[50%] w-[400px] h-[400px] overflow-hidden ">
+    <img src={Img} alt="" className=' w-[100%]'/>
       </div>
     </div>
      
