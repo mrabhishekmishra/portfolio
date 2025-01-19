@@ -31,7 +31,7 @@ const about = () => {
    <div className="container p-5 mt-[50px] m-auto block md:flex md:justify-between   text-[white] ">
     <div className='w-[60%] text-center lg:text-start m-auto '>
     <div className="img w-[100%]  flex justify-center m-auto  block lg:hidden items-center  ">
-      <div className="profile-img border border-[cyan]  w-[500px] h-[380px] rounded-[50%] overflow-hidden ">
+      <div className="profile-img border border-[cyan]  w-[100%]  rounded-[50%] overflow-hidden ">
     <img src={Img} alt="" className=' w-[100%]'/>
       </div>
     </div>
