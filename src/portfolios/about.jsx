@@ -12,7 +12,7 @@ const about = () => {
     <>
     <div className="container-fluid  flex">
       <div className="social_links  h-[100%]  fixed top-100 p-3  lg:flex justify-center items-center hidden lg:block"> 
-        <ul className='border '>
+        <ul className=' '>
         
           <li className='cursor-pointer my-5 md:text-[25px]'> <a href="https://github.com/mrabhishekmishra">
             <FontAwesomeIcon icon={faGithub}/></a>
@@ -30,7 +30,7 @@ const about = () => {
       </div>
    <div className="container p-5 mt-[50px] m-auto block md:flex md:justify-between   text-[white] ">
     <div className='w-[60%] text-center lg:text-start m-auto '>
-    <div className="img w-[100%]  flex justify-center m-auto  block lg:hidden items-center  ">
+    <div className="img mx-w-[100%]  flex justify-center m-auto  block lg:hidden items-center  ">
       <div className="profile-img border border-[cyan]  w-[100%]  rounded-[50%] overflow-hidden ">
     <img src={Img} alt="" className=' w-[100%]'/>
       </div>
