@@ -4,13 +4,14 @@ import { useState } from "react";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 const header = () => {
   let [flag , useflag] = useState('0')
-  console.log(flag)
   let show = ()=>{
    if(flag == 0){
       useflag('1')
    }else{
      useflag('0')
    }
+
+  
     
   }
   return (

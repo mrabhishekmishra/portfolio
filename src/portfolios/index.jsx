@@ -4,6 +4,7 @@ import About from "./about"
 import Project from "./projects"
 import Skills from "./skills";
 const index = () => {
+
   return (
     <>
     <div className="container-fluid  bg-gray-900 text-[807e7e] text-[#7792b0]">
