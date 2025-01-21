@@ -16,7 +16,7 @@ const header = () => {
   }
   return (
     <>
-      <div className="container-fluid  bg-[#112240]  sticky top-0 py-4 ">
+      <div className="container-fluid bg-gray-900 shadow_border  sticky top-0 py-4 ">
         <div className="container m-auto flex items-center justify-between p-5 sm:p-0  ">
 
       
@@ -55,7 +55,7 @@ const header = () => {
       <FontAwesomeIcon icon={ faXmark }  onClick={show} className={`${(flag == 0) ? 'hidden': 'block'} text-end`}/>
       </div>
 
-      <ul className={`${(flag == 0) ? 'hidden': 'block'} fixed mt-10 right-0 bg-[#112240]  h-[100%] px-10 `}>
+      <ul className={`${(flag == 0) ? 'hidden': 'block'} fixed mt-10 right-0 bg-gray-900  h-[100%] px-10 `}>
           <li className="text-[cyan] font-bold font-serif text-[20px] my-5 cursor-pointer">
             01. <span className="text-[#8892b0]">About</span>
             

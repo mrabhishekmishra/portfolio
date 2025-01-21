@@ -59,6 +59,11 @@ const about = () => {
     </div>
      
    </div>
+   <div className="contact  h-[100%] h-[100%] hidden lg:block fixed right-[-120px] lg:flex items-center justify-center p-3 ">
+      <div className="emails  rotate-90 font-bold font-sans">
+        abhishekmishra342001@gamil.com 8948442561
+      </div>
+   </div>
    
    </div>
    </>
