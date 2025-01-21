@@ -18,7 +18,7 @@ const contact = () => {
         },
         {
             type: 'text',
-            placeholder : 'Name'
+            placeholder : 'Message'
         }
     ]
   return (
@@ -42,7 +42,7 @@ const contact = () => {
                             }
                         )
                     }
-                    <button type="button" className="bg-[cyan] mt-5 w-[100%] rounded-lg text-black text-[22px] p-3 cursor-pointer font-bold">
+                    <button type="submit" className="bg-[cyan] mt-5 w-[100%] rounded-lg text-black text-[22px] p-3 cursor-pointer font-bold">
                         Send <FontAwesomeIcon icon={faArrowRight}/>
                     </button>
                     
