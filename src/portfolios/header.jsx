@@ -35,14 +35,17 @@ const header = () => {
                 console.log(value.path)
                return(
                 <>
-                <Link to={value.path}>
+                
                 <li  className="text-[cyan] font-bold font-serif text-[20px] mx-5 cursor-pointer">
-                {value.id} <span className="text-[#8892b0]">{value.name}</span>
+                  
+                  {value.id} <span className="text-[#8892b0]">{value.name}</span>
+                  
+               
                 
            
             
           </li >
-          </Link>
+                
                  
                 </>
                )

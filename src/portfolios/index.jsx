@@ -5,7 +5,7 @@ import Project from "./projects"
 import Skills from "./skills";
 import Contact from "./contact";
 import Footer from "./footer";
-import { createBrowserRouter, RouterProvider  } from "react-router-dom";
+import { createBrowserRouter, RouterProvider  ,BrowserRouter } from "react-router-dom";
 
 let route = createBrowserRouter(
   [
@@ -33,9 +33,13 @@ const index = () => {
   return (
     <>
     <div className="container-fluid  bg-gray-900 text-[807e7e] text-[#7792b0] font-serif">
+   
         <Header/>
+        
           <RouterProvider router={route}/>
-          <Footer/>
+          
+         <Footer/>
+         
         
     </div>
     </>
