@@ -64,9 +64,9 @@ const projects = () => {
               (details)=>{
                 return (
                   <>
-                  <div class="shadow_border lg:w-[31%]  border p-3 mt-4 rounded-lg shadow  border-[cyan] p-3 ">
+                  <div class="shadow_border lg:w-[31%]  border p-3 mt-5 rounded-lg shadow  border-[cyan] p-3 ">
             <a href={details.link}>
-              <img class="rounded-t-lg  w-[100%]" src={details.image} alt="" />
+              <img class="rounded-t-lg  w-[100%] h-[220px]" src={details.image} alt="" />
             </a>
             <div class=" text-start mt-2">
               <h1 className="text-[white] font-bold text-[22px]">

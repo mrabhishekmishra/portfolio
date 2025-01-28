@@ -2,6 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import Data from './data.jsx'
+import { Link } from "react-router-dom";
+
+let navbar = Data[0].navbar
 const header = () => {
   let [flag , useflag] = useState('0')
   let show = ()=>{
@@ -10,11 +14,11 @@ const header = () => {
    }else{
      useflag('0')
    }
+  }
 
   
-    
-  }
-  return (
+ 
+    return (
     <>
       <div className="container-fluid bg-gray-900 shadow_border  sticky top-0 py-4 ">
         <div className="container m-auto flex items-center justify-between p-5 sm:p-0  ">
@@ -25,26 +29,28 @@ const header = () => {
       </div>
       <div className="menubar hidden lg:block ">
         <ul className="flex">
-          <li className="text-[cyan] font-bold font-serif text-[20px] mx-5 cursor-pointer">
-            01. <span className="text-[#8892b0]">About</span>
+          {
+            navbar.map(
+              (value)=>{
+                console.log(value.path)
+               return(
+                <>
+                <Link to={value.path}>
+                <li  className="text-[cyan] font-bold font-serif text-[20px] mx-5 cursor-pointer">
+                {value.id} <span className="text-[#8892b0]">{value.name}</span>
+                
+           
             
-          </li>
-          <li className="text-[cyan] font-bold font-serif text-[20px] mx-5 cursor-pointer">
-            02. <span className="text-[#8892b0]">Project</span>
-            
-          </li>
-          <li className="text-[cyan] font-bold font-serif text-[20px] mx-5 cursor-pointer">
-            03. <span className="text-[#8892b0]">Skills</span>
-            
-          </li>
-          <li className="text-[cyan] font-bold font-serif text-[20px] mx-5 cursor-pointer">
-            04. <span className="text-[#8892b0]">Education</span>
-            
-          </li>
-          <li className="text-[cyan] font-bold font-serif text-[20px] mx-5 cursor-pointer">
-            05. <span className="text-[#8892b0]">Contact </span>
-            
-          </li>
+          </li >
+          </Link>
+                 
+                </>
+               )
+              }
+            )
+          }
+          
+          
 
         </ul>
         {/* navbar buttom contact  */}
@@ -56,26 +62,23 @@ const header = () => {
       </div>
 
       <ul className={`${(flag == 0) ? 'hidden': 'block'} fixed mt-10 right-0 bg-gray-900  h-[100%] px-10 `}>
-          <li className="text-[cyan] font-bold font-serif text-[20px] my-5 cursor-pointer">
-            01. <span className="text-[#8892b0]">About</span>
-            
-          </li>
-          <li className="text-[cyan] font-bold font-serif text-[20px] my-5 cursor-pointer">
-            02. <span className="text-[#8892b0]">Project</span>
-            
-          </li>
-          <li className="text-[cyan] font-bold font-serif text-[20px] my-5 cursor-pointer">
-            03. <span className="text-[#8892b0]">Skills</span>
-            
-          </li>
-          <li className="text-[cyan] font-bold font-serif text-[20px] my-5 cursor-pointer">
-            04. <span className="text-[#8892b0]">Education</span>
-            
-          </li>
-          <li className="text-[cyan] font-bold font-serif text-[20px] my-5 cursor-pointer">
-            05. <span className="text-[#8892b0]">Contact </span>
-            
-          </li>
+        {
+          navbar.map(
+            (value)=>{
+              return(
+                <>
+                <li className="text-[cyan] font-bold font-serif text-[20px] my-5 cursor-pointer">
+              {value.id} <span className="text-[#8892b0]">{value.name}</span>
+              
+            </li>
+                </>
+              )
+              
+            }
+          )
+        }
+         
+         
 
         </ul>
 
