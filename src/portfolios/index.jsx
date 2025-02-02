@@ -5,34 +5,9 @@ import Project from "./projects"
 import Skills from "./skills";
 import Contact from "./contact";
 import Footer from "./footer";
-import Educations from "./educations";
-import { createBrowserRouter, RouterProvider  ,BrowserRouter } from "react-router-dom";
+// import Educations from "./educations";
 
-let route = createBrowserRouter(
-  [
-    {
-      path:'/',
-      element:<About/>
-    },
-    {
-      path : '/projects',
-      element : <Project/>
-    },
-    {
-      path : '/skills',
-      element : <Skills/>
-    },
-    {
-      path : '/contact',
-      element : <Contact/>
-    },
-    {
-      path : '/education',
-      element : <Educations/>
-    },
 
-  ]
-)
 const index = () => {
 
   return (
@@ -41,12 +16,12 @@ const index = () => {
    
         <Header/>
         
-          <RouterProvider router={route}/>
+        
 
-          {/* <About/>
+          <About/>
           <Project/>
           <Skills/>
-          <Contact/> */}
+          <Contact/>
           
          <Footer/>
          

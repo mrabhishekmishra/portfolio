@@ -1,4 +1,3 @@
-import React from "react";
 import zomato from "./images/zomato.png";
 import qrcode from './images/qrcode.png';
 import accordian from './images/accordian.png'
@@ -54,7 +53,7 @@ const projects = () => {
       
   return (
     <>
-      <div className="container m-auto my-4 p-2  text-center ">
+      <div className="container m-auto my-4 p-2  text-center " id="project01">
         <h1 className="text-[white] text-[25px] font-bold">
           <span className="text-[cyan]">02.</span> Projects
         </h1>
@@ -64,7 +63,7 @@ const projects = () => {
               (details)=>{
                 return (
                   <>
-                  <div class="shadow_border lg:w-[31%]  border p-3 mt-5 rounded-lg shadow  border-[cyan] p-3 ">
+                  <div id="project" class="shadow_border lg:w-[31%]  border p-3 mt-5 rounded-lg shadow  border-[cyan] p-3 ">
             <a href={details.link}>
               <img class="rounded-t-lg  w-[100%] h-[220px]" src={details.image} alt="" />
             </a>

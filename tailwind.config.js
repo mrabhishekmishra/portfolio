@@ -16,6 +16,6 @@ export default {
     },
   },
   plugins: [
-    flowbite.content(),
+    flowbite.plugin(),
   ],
 }

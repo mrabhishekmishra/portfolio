@@ -1,6 +1,6 @@
 let data = [
   {
-    navbar: [
+   navbar: [
       {
         id: "01.",
         name: "About",
