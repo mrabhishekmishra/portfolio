@@ -3,6 +3,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import Data from "./data.jsx";
+import { Link } from "react-router-dom";
 
 let navbar = Data[0].navbar;
 const header = () => {
@@ -28,6 +29,8 @@ const header = () => {
               {navbar.map((value, index) => {
                 // console.log(value.path);
                 return (
+                  <>
+                   <Link to={value.path}>
                   <li
                     key={index}
                     className="text-[cyan] font-bold font-serif text-[20px] mx-5 cursor-pointer"
@@ -37,6 +40,8 @@ const header = () => {
                       <span className="text-[#8892b0]">{value.name}</span>
                     
                   </li>
+                  </Link>
+                  </>
                 );
               })}
             </ul>
@@ -65,10 +70,19 @@ const header = () => {
               {navbar.map((value, index) => {
                 return (
   
-                    <li key={index} className="text-[cyan] font-bold font-serif text-[20px] my-5 cursor-pointer">
-                      {value.id}{" "}
+                    <>
+                     <Link to={value.path}>
+                  <li
+                    key={index}
+                    className="text-[cyan] font-bold font-serif text-[20px] mx-5 cursor-pointer"
+                  >
+                   
+                      {/* {value.id}{" "} */}
                       <span className="text-[#8892b0]">{value.name}</span>
-                    </li>
+                    
+                  </li>
+                  </Link>
+                    </>
 
                 );
               })}

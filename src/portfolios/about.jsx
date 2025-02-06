@@ -4,14 +4,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { Button, Modal } from "flowbite-react";
+import {  Modal } from "flowbite-react";
 import { useState } from "react";
+import Header from "./header";
+import Footer from './footer'
 const about = () => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
-      <div className="container-fluid  flex">
+      <Header/>
+      <div className="container-fluid  flex" id="about">
         <div className="social_links  h-[100%]  fixed top-100 p-3  lg:flex justify-center items-center hidden lg:block">
           <ul className=" ">
             <li className="cursor-pointer my-5 md:text-[25px]">
@@ -82,12 +85,13 @@ const about = () => {
             </div>
           </div>
         </div>
-        <div className="contact  h-[100%] h-[100%] hidden lg:block fixed right-[-120px] lg:flex items-center justify-center p-3 ">
+        <div className="contact   h-[100%] hidden lg:block fixed right-[-120px] lg:flex items-center justify-center p-3 ">
           <div className="emails  rotate-90 font-bold font-sans">
             abhishekmishra342001@gamil.com 8948442561
           </div>
         </div>
       </div>
+      <Footer/>
       {/* model */}
       <Modal show={openModal} onClose={() => setOpenModal(false)}>
         <div className="shadow_border rounded-lg bg-gray-900">
@@ -104,6 +108,7 @@ const about = () => {
             </Modal.Footer>
         </div>
       </Modal>
+      
     </>
   );
 };

@@ -15,6 +15,8 @@ import VsCode from './images/VS Code.png'
 import Postman from './images/Postman.png'
 import MongoDBCompass from './images/MongoDB Compass.png'
 import ChatGPT from './images/ChatGPT-Logo.png'
+import Header from "./header";
+import Footer from "./footer";
 const skills = () => {
   let skill = [
     {
@@ -107,6 +109,7 @@ const skills = () => {
   ];
   return (
     <>
+    <Header/>
       <div className="container m-auto my-4 p-3  text-center ">
         <h1 className="text-[white] text-[25px] font-bold">
           <span className="text-[cyan]">03.</span> Skills
@@ -143,6 +146,7 @@ const skills = () => {
           })}
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

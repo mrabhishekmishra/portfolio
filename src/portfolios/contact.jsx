@@ -1,5 +1,7 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Header from "./header"
+import Footer from "./footer"
 
 
 const contact = () => {
@@ -23,6 +25,7 @@ const contact = () => {
     ]
   return (
     <>
+<Header/>
       <div className="container m-auto my-4 p-2  text-center ">
       <h1 className="text-[white] text-[25px] font-bold">
           <span className="text-[cyan]">05.</span> Conatact 
@@ -51,6 +54,7 @@ const contact = () => {
 
         </div>
       </div>
+      <Footer/>
     </>
   )
 }
