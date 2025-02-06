@@ -74,7 +74,7 @@ const header = () => {
                      <Link to={value.path}>
                   <li
                     key={index}
-                    className="text-[cyan] font-bold font-serif text-[20px] mx-5 cursor-pointer"
+                    className="text-[cyan] font-bold font-serif text-[20px] m-5 cursor-pointer"
                   >
                    
                       {/* {value.id}{" "} */}
