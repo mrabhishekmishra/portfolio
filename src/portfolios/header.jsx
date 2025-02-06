@@ -21,7 +21,9 @@ const header = () => {
       <div className="container-fluid bg-gray-900 shadow_border  sticky top-0 py-4 ">
         <div className="container m-auto flex items-center justify-between p-5 sm:p-0  ">
           <div className="logo w-[80px] h-[80px] rounded-full border-[3px] border-[cyan] text-[cyan] flex justify-center items-center text-[30px]">
-            AM
+             <Link to={"/"}>
+             AM
+             </Link>
           </div>
           <div className="menubar hidden lg:block ">
             <ul className="flex">
