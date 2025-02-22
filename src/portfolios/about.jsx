@@ -9,6 +9,7 @@ import { useState } from "react";
 import Header from "./header";
 import Footer from './footer'
 import Resumeimg from './images/resumeimg.png'
+
 const about = () => {
   const [openModal, setOpenModal] = useState(false);
 
@@ -104,7 +105,7 @@ const about = () => {
         </Modal.Body>
         <Modal.Footer >
         <button className=" bg-[cyan] text-[black] font-bold p-3  rounded-lg  text-[16px] cursor-pointer"> 
-             <a href={"./images/Abhishek_resume.pdf"} download={'Abhishek_resume.pdf'}>
+             <a href={"https://drive.google.com/drive/folders/1-IR1DFoKL6DhukZ34p-bxCPGiAiVXHUP"} >
              Download Resume
               </a>  
             </button>
