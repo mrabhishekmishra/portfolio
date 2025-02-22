@@ -8,6 +8,7 @@ import {  Modal } from "flowbite-react";
 import { useState } from "react";
 import Header from "./header";
 import Footer from './footer'
+import Resumeimg from './images/resumeimg.png'
 const about = () => {
   const [openModal, setOpenModal] = useState(false);
 
@@ -98,12 +99,14 @@ const about = () => {
       <Modal.Header ><span className="text-[white]">Resume</span></Modal.Header>
         <Modal.Body >
           <div className="space-y-6 w-[100%] h-[400px] ">
-            
+            <img src={Resumeimg} alt="" className="w-full" />
           </div>
         </Modal.Body>
         <Modal.Footer >
         <button className=" bg-[cyan] text-[black] font-bold p-3  rounded-lg  text-[16px] cursor-pointer"> 
-              Download Resume 
+             <a href={"./images/Abhishek_resume.pdf"} download={'Abhishek_resume.pdf'}>
+             Download Resume
+              </a>  
             </button>
             </Modal.Footer>
         </div>
