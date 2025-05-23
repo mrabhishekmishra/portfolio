@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom css */
+
+.shadow_border{
+    box-shadow: 0 0 5px 0px cyan;
+}
