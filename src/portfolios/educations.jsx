@@ -31,7 +31,7 @@ const educations = () => {
       image : vbspu ,
       uni_name : 'Veer Bhadur Purvanchal University',
       course_name : "Bachelor of Computer Application (BCA)",
-      year: "2018-2021",
+      year: "Pursing",
       status : "Pursing"
     },{
       image : wscube ,
