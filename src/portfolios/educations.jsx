@@ -28,6 +28,12 @@ const educations = () => {
       year: "2018-2021",
       status : "Complete"
     },{
+      image : vbspu ,
+      uni_name : 'Veer Bhadur Purvanchal University',
+      course_name : "Bachelor of Computer Application (BCA)",
+      year: "2018-2021",
+      status : "Pursing"
+    },{
       image : wscube ,
       uni_name : 'WsCube Tech (Jodhpur)',
       course_name : "FULL STACK WEB DEVELOPER (PHP & MERN)",
